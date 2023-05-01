@@ -1,7 +1,37 @@
-.sidebarWrapper{
-    width: 10vw;
-    background-color: #f2f2f2;
-    height: 100vh;
-    position: fixed;
-    left: 14.8vw;
+.sidebarWrapper {
+  width: 10vw;
+  background-color: #f2f2f2;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+}
+.sidebarWrapper-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+}
+.sidebarWrapper-content-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #255811 !important;
+  font-size: 16px !important;
+}
+.sidebarLogo {
+  width: 50px;
+  height: 50px;
+  box-shadow: 1px 1px 2px 3px #266e2c;
+}
+.sidebarHome-icon {
+  width: 50px !important;
+  height: 50px !important;
+  color: #266e2c !important;
+  cursor: pointer;
+}
+.sidebarWrapper-content-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
 }

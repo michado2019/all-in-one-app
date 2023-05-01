@@ -1,11 +1,13 @@
 .homeHeader-wrapper{
-    width:40vw;
+    width:70vw;
     height: 100px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
+    box-shadow: 1px 1px 2px 3px #266e2c;
+    background-color: #fff;
 }
 .homeHeader-details{
   font-family: "Lobster", cursive;
