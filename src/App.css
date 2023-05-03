@@ -8,5 +8,5 @@
 .appSidebar-router{
     display: flex;
     justify-content: center;
-    margin-left: 10vw;
+    margin-left: -10vw;
 }

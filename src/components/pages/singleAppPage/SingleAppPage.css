@@ -1,0 +1,41 @@
+.singleAppPage-content {
+  display: flex;
+  align-items: flex-start;
+  margin: 40px 40px;
+  justify-content: space-evenly;
+}
+.singleAppPage-content_link {
+  font-size: 20px;
+  color: #555;
+  text-decoration: none;
+  border-bottom: 2px solid#266e2c;
+}
+.singleAppPage-skill_display {
+  cursor: pointer;
+  color: #555;
+  font-size: 18px;
+}
+.singleAppPage-content3 {
+  margin-top: 40px;
+  margin-left: -160px;
+}
+.singleAppPage-info {
+  color: #555;
+  font-size: 18px;
+}
+.singleAppPage-content5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+.singleAppPage-content5_img {
+  width: 120px;
+  height: 100px;
+  border-radius: 5px;
+}
+.singleAppPage-content5_details {
+  width: 100px;
+  color: #555;
+  font-size: 18px;
+}

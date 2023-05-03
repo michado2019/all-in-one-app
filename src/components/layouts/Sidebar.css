@@ -24,14 +24,15 @@
   box-shadow: 1px 1px 2px 3px #266e2c;
 }
 .sidebarHome-icon {
-  width: 50px !important;
-  height: 50px !important;
+  width: 40px !important;
+  height: 40px !important;
   color: #266e2c !important;
   cursor: pointer;
 }
 .sidebarWrapper-content-2 {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 50px auto;
+  margin: 10px auto;
 }
