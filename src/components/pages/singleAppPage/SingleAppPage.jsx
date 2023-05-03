@@ -18,35 +18,37 @@ const SingleAppPage = () => {
               <div key={each.id}>
                 <HomeHeader />
                 <div className="singleAppPage-content">
-                  <Link
-                    to={`/singleAppPage/${each.id}/${each.path}`}
-                  >
+                  <Link to={`/singleAppPage/${each.id}/${each.path}`}>
                     {" "}
-                    <p className="singleAppPage-content_link">Check the app here</p>{" "}
+                    <p className="singleAppPage-content_link">
+                      Check the app here
+                    </p>{" "}
                   </Link>
-                  <p
-                    className="singleAppPage-skill_display"
-                    onClick={() => setDisplay((prev) => !prev)}
-                  >
-                    Skills required
-                  </p>{" "}
-                  <div
-                    className="singleAppPage-content2"
-                    style={{ display: display ? "block" : "none" }}
-                  >
-                    <div className="singleAppPage-content3">
-                      <p className="singleAppPage-info">
-                        {each.skills_required.skill_1}
-                      </p>
-                      <p className="singleAppPage-info">
-                        {each.skills_required.skill_2}
-                      </p>
-                      <p className="singleAppPage-info">
-                        {each.skills_required.skill_3}
-                      </p>
-                      <p className="singleAppPage-info">
-                        {each.skills_required.skill_4}
-                      </p>
+                  <div>
+                    <p
+                      className="singleAppPage-skill_display"
+                      onClick={() => setDisplay((prev) => !prev)}
+                    >
+                      Skills required
+                    </p>{" "}
+                    <div
+                      className="singleAppPage-content2"
+                      style={{ display: display ? "block" : "none" }}
+                    >
+                      <div className="singleAppPage-content3">
+                        <p className="singleAppPage-info">
+                          {each.skills_required.skill_1}
+                        </p>
+                        <p className="singleAppPage-info">
+                          {each.skills_required.skill_2}
+                        </p>
+                        <p className="singleAppPage-info">
+                          {each.skills_required.skill_3}
+                        </p>
+                        <p className="singleAppPage-info">
+                          {each.skills_required.skill_4}
+                        </p>
+                      </div>
                     </div>
                   </div>
                   <div className="singleAppPage-content4">
