@@ -33,7 +33,7 @@ const SingleAppPage = () => {
                     </p>{" "}
                     <div
                       className="singleAppPage-content2"
-                      style={{ display: display ? "block" : "none" }}
+                      style={{ display: display ? "none" : "block" }}
                     >
                       <div className="singleAppPage-content3">
                         <p className="singleAppPage-info">

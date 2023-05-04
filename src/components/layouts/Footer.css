@@ -1,5 +1,16 @@
-.footerWrapper{
-    background-color: #111;
-    height: 100px;
-    margin-top: 70px;
+.footerWrapper {
+  background-color: #111;
+  height: 100px;
+}
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+.footerContent h2 {
+  font-family: "Lobster", cursive;
+  color: #266e2c;
+  font-size: 18px;
 }

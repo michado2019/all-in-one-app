@@ -36,14 +36,20 @@
 }
 .rightBar-content1_titleArrow {
   color: #266e2c !important;
+  display: flex;
+  align-items: center;
 }
-.rightBar-content1_indexArrow{
-    display: flex;
-    align-items: center;
+.rightBar-content1_link {
+  text-decoration: none;
 }
-.rightBar-content1_index{
-    font-size: 10px;
-    margin: 2px;
+.rightBar-content1_index {
+  font-size: 10px;
+  margin: 2px;
+}
+.rightBar-content1_link{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 .rightBar-content1_titleTitle {
   color: #555 !important;

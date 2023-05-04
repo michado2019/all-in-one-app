@@ -3,12 +3,17 @@ import "./Rightbar.css";
 import { fProjectData } from "../ProjectData";
 import { bProjectData } from "../ProjectData";
 import { ArrowRight } from "@mui/icons-material";
-import { useSearchParams } from "react-router-dom";
-const Rightbar = ({ homeId }) => {
+import { useSearchParams, Link } from "react-router-dom";
+const Rightbar = ({ homeId, setDisplay, setHomeId }) => {
   //State
   const [searchParams, setSearchParams] = useSearchParams();
 
   //Handlers
+
+  const handleDisplay = (id) => {
+    setDisplay(true);
+    setHomeId(id);
+  }
   const handleTitleSearch = (e) => {
     e.preventDefault();
     let filter = e.target.value;
@@ -34,9 +39,14 @@ const Rightbar = ({ homeId }) => {
                 <div style={{ display: homeId === each.id ? "block" : "none" }}>
                   <ArrowRight className="rightBar-content1_titleArrow" />
                 </div>
-                <ul className="rightBar-content1_indexArrow">
+                <ul className="rightBar-content1_indexArrow" 
+                    onClick={() => handleDisplay(each.id)}
+                >
+                <Link
+                  to={`singleAppPage/${each.id}`} className="rightBar-content1_link">
                   <h4 className="rightBar-content1_index" style={{ display: homeId === each.id ? "none" : "block" }}>{index+1}</h4>
                   <li className="rightBar-content1_titleTitle">{each.title}</li>
+                </Link>
                 </ul>
               </div>
             );

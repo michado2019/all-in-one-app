@@ -24,7 +24,11 @@ function App() {
           homeId={homeId}
           setHomeId={setHomeId}
         />
-        <Rightbar homeId={homeId} />
+        <Rightbar
+          homeId={homeId}
+          setHomeId={setHomeId}
+          setDisplay={setDisplay}
+        />
       </div>
       <Footer />
     </div>
