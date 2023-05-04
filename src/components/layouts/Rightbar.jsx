@@ -13,7 +13,7 @@ const Rightbar = ({ homeId, setDisplay, setHomeId }) => {
   const handleDisplay = (id) => {
     setDisplay(true);
     setHomeId(id);
-  }
+  };
   const handleTitleSearch = (e) => {
     e.preventDefault();
     let filter = e.target.value;
@@ -35,18 +35,32 @@ const Rightbar = ({ homeId, setDisplay, setHomeId }) => {
           />
           {fProjectData.map((each, index) => {
             return (
-              <div className="rightBar-content1_titleDiv" key={each.id} style={{ marginLeft: homeId === each.id ? "-8px" : "" }}>
+              <div
+                className="rightBar-content1_titleDiv"
+                key={each.id}
+                style={{ marginLeft: homeId === each.id ? "-8px" : "" }}
+              >
                 <div style={{ display: homeId === each.id ? "block" : "none" }}>
                   <ArrowRight className="rightBar-content1_titleArrow" />
                 </div>
-                <ul className="rightBar-content1_indexArrow" 
-                    onClick={() => handleDisplay(each.id)}
+                <ul
+                  className="rightBar-content1_indexArrow"
+                  onClick={() => handleDisplay(each.id)}
                 >
-                <Link
-                  to={`singleAppPage/${each.id}`} className="rightBar-content1_link">
-                  <h4 className="rightBar-content1_index" style={{ display: homeId === each.id ? "none" : "block" }}>{index+1}</h4>
-                  <li className="rightBar-content1_titleTitle">{each.title}</li>
-                </Link>
+                  <Link
+                    to={`singleAppPage/${each.id}`}
+                    className="rightBar-content1_link"
+                  >
+                    <h4
+                      className="rightBar-content1_index"
+                      style={{ display: homeId === each.id ? "none" : "block" }}
+                    >
+                      {index + 1}
+                    </h4>
+                    <li className="rightBar-content1_titleTitle">
+                      {each.title}
+                    </li>
+                  </Link>
                 </ul>
               </div>
             );
