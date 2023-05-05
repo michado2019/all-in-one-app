@@ -2,7 +2,7 @@ import React from "react";
 import "./Rightbar.css";
 import { fProjectData } from "../ProjectData";
 import { bProjectData } from "../ProjectData";
-import { ArrowRight } from "@mui/icons-material";
+import { ArrowRight, SearchOutlined } from "@mui/icons-material";
 import { useSearchParams, Link } from "react-router-dom";
 const Rightbar = ({ homeId, setDisplay, setHomeId }) => {
   //State
@@ -28,43 +28,60 @@ const Rightbar = ({ homeId, setDisplay, setHomeId }) => {
       <div className="rightBar-contents">
         <div className="rightBar-content1">
           <h2 className="rightBar-content1_title">FApps</h2>
-          <input
-            type="text"
-            placeholder="Search"
-            className="rightBar-content1_search"
-          />
-          {fProjectData.map((each, index) => {
-            return (
-              <div
-                className="rightBar-content1_titleDiv"
-                key={each.id}
-                style={{ marginLeft: homeId === each.id ? "-8px" : "" }}
-              >
-                <div style={{ display: homeId === each.id ? "block" : "none" }}>
-                  <ArrowRight className="rightBar-content1_titleArrow" />
-                </div>
-                <ul
-                  className="rightBar-content1_indexArrow"
-                  onClick={() => handleDisplay(each.id)}
+          <form>
+            <input
+              type="text"
+              placeholder="Search"
+              className="rightBar-content1_search"
+              onChange={handleTitleSearch}
+            />
+            <SearchOutlined className="searchIcon" />
+          </form>
+          {fProjectData
+            .filter((each) => {
+              if (searchParams.get("filter")) {
+                return each.title
+                  .toLowerCase()
+                  .includes(searchParams.get("filter").toLowerCase());
+              }
+              return each;
+            })
+            .map((each, index) => {
+              return (
+                <div
+                  className="rightBar-content1_titleDiv"
+                  key={each.id}
+                  style={{ marginLeft: homeId === each.id ? "-8px" : "" }}
                 >
-                  <Link
-                    to={`singleAppPage/${each.id}`}
-                    className="rightBar-content1_link"
+                  <div
+                    style={{ display: homeId === each.id ? "block" : "none" }}
                   >
-                    <h4
-                      className="rightBar-content1_index"
-                      style={{ display: homeId === each.id ? "none" : "block" }}
+                    <ArrowRight className="rightBar-content1_titleArrow" />
+                  </div>
+                  <ul
+                    className="rightBar-content1_indexArrow"
+                    onClick={() => handleDisplay(each.id)}
+                  >
+                    <Link
+                      to={`singleAppPage/${each.id}`}
+                      className="rightBar-content1_link"
                     >
-                      {index + 1}
-                    </h4>
-                    <li className="rightBar-content1_titleTitle">
-                      {each.title}
-                    </li>
-                  </Link>
-                </ul>
-              </div>
-            );
-          })}
+                      <h4
+                        className="rightBar-content1_index"
+                        style={{
+                          display: homeId === each.id ? "none" : "block",
+                        }}
+                      >
+                        {index + 1}
+                      </h4>
+                      <li className="rightBar-content1_titleTitle">
+                        {each.title}
+                      </li>
+                    </Link>
+                  </ul>
+                </div>
+              );
+            })}
         </div>
         <div
           className="rightBar-content1"

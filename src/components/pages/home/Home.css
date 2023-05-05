@@ -4,7 +4,9 @@
   background-color: #ccc;
   background-image: url("https://media.istockphoto.com/id/1371339413/photo/co-working-team-meeting-concept-businessman-using-smart-phone-and-digital-tablet-and-laptop.jpg?b=1&s=170667a&w=0&k=20&c=GnW36mPEYr3TRpPZNLtT75u8v2HOczvRxGckWUN3hVg=");
   background-repeat: no-repeat;
+  min-height: 100vh;
   background-size: 100% 250px;
+  background-blend-mode: overlay;
 }
 .homeContents {
   display: flex;
@@ -14,22 +16,77 @@
 .homeContent {
   margin-top: 100px;
 }
+.homeContent1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.homeSearch {
+  width: 310px;
+  border-radius: 30px;
+  padding: 10px 25px;
+  outline: none;
+  border: none;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  color: #555;
+  font-size: 20px;
+  font-family: "lobster", cursive;
+  box-shadow: 1px 2px 3px #266;
+}
+.searchIcon {
+  width: 35px !important;
+  height: 35px !important;
+  color: #266 !important;
+  margin-left: -50px;
+  cursor: pointer;
+  margin-bottom: -10px;
+}
 .homeContent2 {
   margin-top: 170px;
   display: flex;
   justify-content: space-between;
-  margin: 70px 15%;
+  margin: 70px 10%;
 }
-.homeContent2-link{
+.homeContent2-link {
   width: 100px !important;
   height: 100px !important;
   font-weight: 700 !important;
-  color:#266 !important;
+  color: #266 !important;
   cursor: pointer;
   text-decoration: none;
 }
+.homeContent2-arrow_flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .homeContent2-1 {
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homeContent2-arrow_flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+.arrows{
+  color: #f2f2f2 !important;
+  cursor: pointer;
+  width: 40px !important;
+  height: 70px !important;
+  background-color: #555;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 0 40px;
+}
+#arrows{
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .homeContent2-2 {
   width: 60%;
@@ -43,6 +100,7 @@
 .homeContent2-2_content_details {
   font-size: 20px;
   color: #555;
+  list-style: none;
 }
 .homeContent2-titles {
   font-size: 20px;
