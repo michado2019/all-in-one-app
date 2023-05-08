@@ -17,6 +17,7 @@
 }
 .singleAppPage-content_link:hover {
   border-bottom: 5px solid #266;
+  transition: all 0.3s;
 }
 .singleAppPage-skill_display {
   cursor: pointer;
