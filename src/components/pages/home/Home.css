@@ -1,21 +1,11 @@
 .homeWrapper {
   margin: 0 auto;
   height: fit-content;
-  background-color: #ccc;
-  background-image: url("https://media.istockphoto.com/id/1371339413/photo/co-working-team-meeting-concept-businessman-using-smart-phone-and-digital-tablet-and-laptop.jpg?b=1&s=170667a&w=0&k=20&c=GnW36mPEYr3TRpPZNLtT75u8v2HOczvRxGckWUN3hVg=");
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  background-size: 100% 250px;
-  background-blend-mode: overlay;
-  background-attachment: scroll;
 }
 .homeContents {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.homeContent {
-  margin-top: 100px;
 }
 .homeContent1 {
   display: flex;
@@ -26,10 +16,11 @@
 .homeSearch {
   width: 310px;
   border-radius: 30px;
-  padding: 10px 25px;
+  padding: 5px 25px;
   outline: none;
   border: none;
-  margin: 0 auto;
+  margin: 150px auto;
+  margin-bottom: 50px;
   background-color: #f5f5f5;
   color: #555;
   font-size: 20px;
@@ -37,22 +28,23 @@
   box-shadow: 1px 2px 3px #266;
 }
 .searchIcon {
-  width: 35px !important;
-  height: 35px !important;
+  width: 25px !important;
+  height: 25px !important;
   color: #266 !important;
   margin-left: -50px;
   cursor: pointer;
   margin-bottom: -10px;
 }
 .homeContent2 {
-  margin-top: 170px;
+  margin-top:0;
   display: flex;
   justify-content: space-between;
-  margin: 70px 10%;
+  margin: 50px 10%;
+  height: 70vh;
 }
 .homeContent2-link {
-  width: 100px !important;
-  height: 100px !important;
+  width: 50px !important;
+  height: 50px !important;
   font-weight: 700 !important;
   color: #266 !important;
   cursor: pointer;
@@ -80,14 +72,20 @@
   cursor: pointer;
   width: 40px !important;
   height: 70px !important;
-  background-color: #555;
+  background-color: #266;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   margin: 0 40px;
 }
 #arrows {
-  border-top-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  color: #f2f2f2 !important;
+  margin: 0 40px;
+  cursor: pointer;
+  width: 40px !important;
+  height: 70px !important;
+  background-color: #266;
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
 }
 .homeContent2-2 {
   width: 60%;
@@ -97,15 +95,20 @@
   box-shadow: 1px 2px 4px #fff;
   padding: 4px 7px;
 }
+.homeContent2-2_contentFlex {
+  height: 30px;
+}
 .homeContent2-2_content_titles,
 .homeContent2-2_content_details {
-  font-size: 20px;
+  font-size: 16px;
   color: #555;
   list-style: none;
 }
 .homeContent2-titles {
-  font-size: 20px;
+  font-size: 16px;
   font-family: "lobster", cursive;
+  color: #555;
+  text-shadow: 0.5px 2px 1px #ccc;
 }
 .homeContent2-2_content_link {
   color: #266;
@@ -113,8 +116,9 @@
 .homeContent2-2_content_details {
   border-top: 2px solid #266;
   background-color: #ddd;
-  font-size: 16px;
+  font-size: 18px;
   padding: 7px 15px;
+  margin-top: 10px;
 }
 .homeContent2-2_content {
   background-color: #f2f2f2;

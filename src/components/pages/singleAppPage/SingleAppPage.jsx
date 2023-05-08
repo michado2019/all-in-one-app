@@ -18,23 +18,24 @@ const SingleAppPage = () => {
               <div key={each.id}>
                 <HomeHeader />
                 <div className="singleAppPage-content">
-                  <Link to={`/singleAppPage/${each.id}/${each.path}`}>
+                  <Link
+                    to={`/singleAppPage/${each.id}/${each.path}`}
+                    className="singleAppPage-content_link"
+                  >
                     {" "}
-                    <p className="singleAppPage-content_link">
-                      Check the app here
-                    </p>{" "}
+                    Check the app here
                   </Link>
                   <div>
-                    <p
-                      className="singleAppPage-skill_display"
-                      onClick={() => setDisplay((prev) => !prev)}
-                    >
-                      Skills required
-                    </p>{" "}
                     <div
                       className="singleAppPage-content2"
                       style={{ display: display ? "none" : "block" }}
                     >
+                      <p
+                        className="singleAppPage-skill_display"
+                        onClick={() => setDisplay((prev) => !prev)}
+                      >
+                        Skills required:
+                      </p>{" "}
                       <div className="singleAppPage-content3">
                         <p className="singleAppPage-info">
                           {each.skills_required.skill_1}

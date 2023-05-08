@@ -7,9 +7,9 @@ import {
   ArrowForwardIos,
   LineAxis,
   LineAxisOutlined,
-  SearchOutlined,
 } from "@mui/icons-material";
 import { Link, useSearchParams } from "react-router-dom";
+import HomeTopPart from "./HomeTopPart";
 const Home = ({ setDisplay, setHomeId }) => {
   // States
   const [search, setSearch] = useSearchParams();
@@ -24,10 +24,10 @@ const Home = ({ setDisplay, setHomeId }) => {
   const skip = page * perPage - perPage;
 
   //Handlers
-const handleProjectDisplay = (id) => {
-  setProjectDisplay((prev) => !prev);
-  setId(id);
-};
+  const handleProjectDisplay = (id) => {
+    setProjectDisplay((prev) => !prev);
+    setId(id);
+  };
 
   const handleDisplay = (id2) => {
     setDisplay(true);
@@ -42,6 +42,7 @@ const handleProjectDisplay = (id) => {
       setSearch({});
     }
   };
+ 
   return (
     <div className="homeWrapper">
       <div className="homeContents">
@@ -49,17 +50,7 @@ const handleProjectDisplay = (id) => {
           <HomeHeader />
         </div>
         <div className="homeContent">
-          <div className="homeContent1">
-            <form>
-              <input
-                type="text"
-                placeholder="Search"
-                className="homeSearch"
-                onChange={handleNameSearch}
-              />
-              <SearchOutlined className="searchIcon" />
-            </form>
-          </div>
+          <HomeTopPart handleNameSearch={handleNameSearch}/>
           <div className="homeContent2">
             <div className="homeContent2-1">
               <h2 className="homeContent2-titles">Internal projects</h2>
@@ -70,22 +61,26 @@ const handleProjectDisplay = (id) => {
                 />
               </Link>
               <div className="homeContent2-arrow_flex">
-                <ArrowBackIosNew className="arrows" id="arrows"
-                style={{
-                  backgroundColor: page <= 1 ? "#a9a6a6" : "",
-                  display: page <= 1 ? "none" : "block",
-                }}
-                disabled={page <= 1}
-                onClick={() => setPage((prev) => prev - 1)}
+                <ArrowBackIosNew
+                  id="arrows"
+                  style={{
+                    backgroundColor: page <= 1 ? "#a9a6a6" : "",
+                    display: page <= 1 ? "none" : "block",
+                  }}
+                  disabled={page <= 1}
+                  onClick={() => setPage((prev) => prev - 1)}
                 />
-                <ArrowForwardIos className="arrows" style={{
-            backgroundColor: page >= pages ? "#a9a6a6" : "",
-            display: page >= pages ? "none" : "block",
-          }}
-          disabled={page >= pages}
-          aria-disabled={page >= pages}
-          onClick={() => setPage((prev) => prev + 1)}/>
-                </div>
+                <ArrowForwardIos
+                  className="arrows"
+                  style={{
+                    backgroundColor: page >= pages ? "#a9a6a6" : "",
+                    display: page >= pages ? "none" : "block",
+                  }}
+                  disabled={page >= pages}
+                  aria-disabled={page >= pages}
+                  onClick={() => setPage((prev) => prev + 1)}
+                />
+              </div>
             </div>
             <div className="homeContent2-2">
               <h2 className="homeContent2-titles">External projects</h2>
@@ -96,7 +91,8 @@ const handleProjectDisplay = (id) => {
                     if (!projectFilter) return true;
                     let projectName = project.projectName.toUpperCase();
                     return projectName.includes(projectFilter.toUpperCase());
-                  }).slice(skip, skip + perPage)
+                  })
+                  .slice(skip, skip + perPage)
                   .map((project) => {
                     return (
                       <div

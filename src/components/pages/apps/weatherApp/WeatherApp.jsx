@@ -3,7 +3,7 @@ import "./WeatherApp.css";
 const WeatherApp = () => {
   return <div className="weatherApp-wrapper">
     <div className="weatherApp-contents">
-      Heeeeeee
+      
     </div>
   </div>;
 };
