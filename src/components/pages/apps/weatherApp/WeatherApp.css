@@ -5,3 +5,10 @@
     justify-content: center;
     margin: 40px auto !important;
 }
+.weatherApp-search{
+    width: 80%;
+}
+.weatherApp-search:hover{
+    outline-color: #266 !important;
+    border-radius: 3px;
+}
