@@ -17,13 +17,13 @@ const CurrentWeather = ({currentWeather}) => {
         </div> 
        </div> 
        <div className="currentWeather-content_down">
-           <h2 className="currentWeather-content_down1">18^0C</h2>
+           <h2 className="currentWeather-content_down1">{Math.round(currentWeather?.main.temp)}°C</h2>
            <div className="currentWeather-content_down2">
            <h4 className="currentWeather-content_downTitle">Details</h4>
-           <p className="currentWeather-content_downParams">Feels like<span className="currentWeather-params">22^0C</span></p>
-           <p className="currentWeather-content_downParams">Wind<span className="currentWeather-params">2 m/s</span></p>
-           <p className="currentWeather-content_downParams">Humidity<span className="currentWeather-params">22^0C</span></p>
-           <p className="currentWeather-content_downParams">Pressure<span className="currentWeather-params">15hPa</span></p>
+           <p className="currentWeather-content_downParams">Feels like<span className="currentWeather-params">{currentWeather?.main.feels_like}°C</span></p>
+           <p className="currentWeather-content_downParams">Wind<span className="currentWeather-params" id="currentWeather-params">{currentWeather?.wind.speed}</span></p>
+           <p className="currentWeather-content_downParams">Humidity<span className="currentWeather-params">{currentWeather?.main.humidity}%</span></p>
+           <p className="currentWeather-content_downParams">Pressure<span className="currentWeather-params" id="currentWeather-param">{currentWeather?.main.humidity}hPa</span></p>
         </div> 
         </div> 
         </div> 

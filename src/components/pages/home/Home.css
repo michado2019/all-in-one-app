@@ -25,18 +25,18 @@
   color: #555;
   font-size: 20px;
   font-family: "lobster", cursive;
-  box-shadow: 1px 2px 3px #266;
+  box-shadow: 1px 2px 3px #2cadbe;
 }
 .searchIcon {
   width: 25px !important;
   height: 25px !important;
-  color: #266 !important;
+  color: #2cadbe !important;
   margin-left: -50px;
   cursor: pointer;
   margin-bottom: -10px;
 }
 .homeContent2 {
-  margin-top:0;
+  margin-top: 0;
   display: flex;
   justify-content: space-between;
   margin: 50px 10%;
@@ -46,7 +46,7 @@
   width: 50px !important;
   height: 50px !important;
   font-weight: 700 !important;
-  color: #266 !important;
+  color: #2cadbe !important;
   cursor: pointer;
   text-decoration: none;
 }
@@ -72,7 +72,7 @@
   cursor: pointer;
   width: 40px !important;
   height: 70px !important;
-  background-color: #266;
+  background-color: #2cadbe;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   margin: 0 40px;
@@ -81,9 +81,9 @@
   color: #f2f2f2 !important;
   margin: 0 40px;
   cursor: pointer;
-  width: 40px !important;
-  height: 70px !important;
-  background-color: #266;
+  width: 30px !important;
+  height: 50px !important;
+  background-color: #2cadbe;
   border-top-left-radius: 5px !important;
   border-bottom-left-radius: 5px !important;
 }
@@ -111,10 +111,10 @@
   text-shadow: 0.5px 2px 1px #ccc;
 }
 .homeContent2-2_content_link {
-  color: #266;
+  color: #2cadbe;
 }
 .homeContent2-2_content_details {
-  border-top: 2px solid #266;
+  border-top: 2px solid #2cadbe;
   background-color: #ddd;
   font-size: 18px;
   padding: 7px 15px;

@@ -15,18 +15,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #266 !important;
+  color: #2cadbe !important;
   font-size: 16px !important;
 }
 .sidebarLogo {
   width: 50px;
   height: 50px;
-  box-shadow: 0.5px 1px 1px 1px #266;
+  box-shadow: 0.5px 1px 1px 1px #2cadbe;
 }
 .sidebarHome-icon {
   width: 40px !important;
   height: 40px !important;
-  color: #266 !important;
+  color: #2cadbe !important;
   cursor: pointer;
 }
 .sidebarWrapper-content-2 {

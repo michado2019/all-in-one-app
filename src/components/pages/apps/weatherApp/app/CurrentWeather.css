@@ -1,22 +1,24 @@
 .currentWeather-wrapper {
   display: flex;
+  margin-top: 20px;
 }
 .currentWeather-content {
-  width: 250px;
-  height: 200px;
-  background-color: #222222;
+  width: 310px;
+  height: 250px;
+  background-color: #505050;
   border-radius: 4px;
-  padding: 3px 7px;
+  padding: 3px 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 1px 3px 5px #222222;
 }
 .currentWeather-content_top {
   display: flex;
   align-items: center;
   color: #f2f2f2;
   font-size: 12px;
-  margin-top: 30px;
+  margin-top: 50px;
   justify-content: space-between;
 }
 .currentWeather-content_top1 {
@@ -32,8 +34,9 @@
   align-items: flex-start;
   justify-content: space-between;
 }
+
 .currentWeather-sunImg{
- margin-left: 80px;
+ margin-left: 120px;
  width: 40px;
  height: 40px;
 }
@@ -45,6 +48,9 @@
   justify-content: space-between;
   margin-top: 20px;
 }
+.currentWeather-content_down1 {
+  font-size: 32px;
+}
 .currentWeather-content_down2 {
   display: flex;
   flex-direction: column;
@@ -52,4 +58,13 @@
   font-size: 12px;
   align-items: flex-start;
   margin-left: 40px;
+}
+.currentWeather-params{
+  margin-left: 40px;
+}
+#currentWeather-params{
+  margin-left: 60px;
+}
+#currentWeather-param{
+  margin-left: 47px;
 }

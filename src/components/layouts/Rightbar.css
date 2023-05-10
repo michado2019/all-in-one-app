@@ -28,13 +28,13 @@
   width: 100%;
   height: 30px;
   border-radius: 5px;
-  border: 1px solid #266;
+  border: 1px solid #2cadbe;
   outline: none;
   padding: 0 10px;
   margin: 20px auto;
 }
 .rightBar-content1_titleArrow {
-  color: #266 !important;
+  color: #2cadbe !important;
   display: flex;
   align-items: center;
 }
