@@ -3,6 +3,7 @@ import "./WeatherApp.css";
 import { AsyncPaginate } from "react-select-async-paginate";
 import { GEO_API_URL, geoApiOptions } from "../../../../weatherApi/WeatherApi";
 import CurrentWeather from "./app/CurrentWeather";
+import ForecastWeather from "./app/ForecastWeather";
 
 const WeatherApp = ({ handleSearchChange, currentWeather, forecastWeather }) => {
   //States
@@ -24,7 +25,7 @@ const WeatherApp = ({ handleSearchChange, currentWeather, forecastWeather }) => 
           options: response.data.map((city) => {
             return {
               value: `${city.latitude} ${city.longitude}`,
-              label: `${city.name}, ${city.countryCode}`,
+              label: `${city.name}, ${city.countryCode}`
             };
           }),
         };
@@ -43,6 +44,7 @@ const WeatherApp = ({ handleSearchChange, currentWeather, forecastWeather }) => 
           loadOptions={loadOptions}
         />
         {currentWeather && <CurrentWeather currentWeather={currentWeather} />}
+        {forecastWeather &&<ForecastWeather forecastWeather={forecastWeather} /> }
       </div>
     </div>
   );

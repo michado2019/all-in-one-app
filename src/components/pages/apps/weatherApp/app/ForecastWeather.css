@@ -1,0 +1,37 @@
+.forecastWeather-wrapper{
+    margin-top: 20px;
+    width: 80%;
+}
+.accordionItemButton-div{
+    display: flex;
+    align-items: flex-start;
+    background-color: #f2f2f2;
+    padding: 5px 15px;
+    margin-top: 7px;
+    border-radius: 20px;
+    cursor: pointer;
+    flex: 1 1;
+}
+.forecastItem-btn_div{
+    display: flex;
+    align-items: flex-start;
+    margin-right: auto;
+    flex: 1 1;
+}
+.forecastItem-icon{
+    width: 20px !important;
+    height: 20px !important;
+    margin-right: 5px;
+}
+.forecastText{
+    font-size: 16px;
+    color: #222222
+}
+#forecast-description{
+    width: 150px;
+    margin-right: auto;
+}
+#forecastText{
+    font-size: 16px;
+    color: #707070;
+}

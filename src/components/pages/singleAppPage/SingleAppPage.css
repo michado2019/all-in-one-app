@@ -6,7 +6,7 @@
 }
 .singleAppPage-content_link {
   font-size: 20px;
-  color: #2cadbe;
+  color: #2c6bbe;
   text-decoration: none;
   background-color: #f5f5f5;
   height: 100px;
@@ -16,7 +16,7 @@
   border-radius: 5px;
 }
 .singleAppPage-content_link:hover {
-  border-bottom: 5px solid #2cadbe;
+  border-bottom: 5px solid #2c6bbe;
   transition: all 0.3s;
 }
 .singleAppPage-skill_display {

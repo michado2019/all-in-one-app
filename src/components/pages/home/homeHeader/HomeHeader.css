@@ -3,12 +3,12 @@
   height: 70px;
   display: flex;
   flex-direction: column;
-  background-color: #2cadbe;
+  background-color: #2c6bbe;
   margin: 0 auto;
   align-items: center;
   color: #f2f2f2;
   justify-content: center;
-  box-shadow: 1px 1px 2px 3px #2cadbe;
+  box-shadow: 1px 1px 2px 3px #2c6bbe;
 }
 .homeHeader-details {
   font-family: "Lobster", cursive;

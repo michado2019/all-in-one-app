@@ -25,12 +25,12 @@
   color: #555;
   font-size: 20px;
   font-family: "lobster", cursive;
-  box-shadow: 1px 2px 3px #2cadbe;
+  box-shadow: 1px 2px 3px #2c6bbe;
 }
 .searchIcon {
   width: 25px !important;
   height: 25px !important;
-  color: #2cadbe !important;
+  color: #2c6bbe !important;
   margin-left: -50px;
   cursor: pointer;
   margin-bottom: -10px;
@@ -46,7 +46,7 @@
   width: 50px !important;
   height: 50px !important;
   font-weight: 700 !important;
-  color: #2cadbe !important;
+  color: #2c6bbe !important;
   cursor: pointer;
   text-decoration: none;
 }
@@ -72,7 +72,7 @@
   cursor: pointer;
   width: 40px !important;
   height: 70px !important;
-  background-color: #2cadbe;
+  background-color: #2c6bbe;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   margin: 0 40px;
@@ -83,7 +83,7 @@
   cursor: pointer;
   width: 30px !important;
   height: 50px !important;
-  background-color: #2cadbe;
+  background-color: #2c6bbe;
   border-top-left-radius: 5px !important;
   border-bottom-left-radius: 5px !important;
 }
@@ -111,10 +111,10 @@
   text-shadow: 0.5px 2px 1px #ccc;
 }
 .homeContent2-2_content_link {
-  color: #2cadbe;
+  color: #2c6bbe;
 }
 .homeContent2-2_content_details {
-  border-top: 2px solid #2cadbe;
+  border-top: 2px solid #2c6bbe;
   background-color: #ddd;
   font-size: 18px;
   padding: 7px 15px;
