@@ -12,3 +12,13 @@
     outline-color: #2c6bbe !important;
     border-radius: 3px;
 }
+@media (max-width: 768px) {
+    .weatherApp-wrapper{
+        margin-left: 20vw;
+    }
+}
+@media (max-width: 575px) {
+    .weatherApp-wrapper{
+        margin-left: 10vw;
+    }
+}

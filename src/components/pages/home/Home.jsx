@@ -128,7 +128,7 @@ const Home = ({ setDisplay, setHomeId }) => {
                             display: project.id === id ? "block" : "none",
                           }}
                         >
-                          {project.details}
+                          {project.details.slice(0, 220)}
                         </p>
                       </div>
                     );
