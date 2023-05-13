@@ -1,7 +1,6 @@
 import React from "react";
 import "./Rightbar.css";
-import { fProjectData } from "../ProjectData";
-import { bProjectData } from "../ProjectData";
+import { fProjectData, bProjectData } from "../ProjectData";
 import { ArrowRight, SearchOutlined } from "@mui/icons-material";
 import { useSearchParams, Link } from "react-router-dom";
 const Rightbar = ({ homeId, setDisplay, setHomeId }) => {

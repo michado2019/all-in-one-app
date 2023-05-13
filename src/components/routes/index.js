@@ -5,7 +5,6 @@ import Home from "../pages/home/Home";
 import SingleAppPage from "../pages/singleAppPage/SingleAppPage";
 import WeatherApp from "../pages/apps/weatherApp/WeatherApp";
 import { AppSinglePriceGridComponent } from "../pages/apps/singlePriceGridComponent/app/AppSinglePriceGridComponent";
-import SmallScreen from "../pages/smallScreen/SmallScreen";
 const AppRouter = ({
   display,
   setDisplay,
@@ -30,7 +29,6 @@ const AppRouter = ({
           }
         />
         <Route path="/singleAppPage/:id" element={<SingleAppPage />} />
-
         <Route
           path="/singleAppPage/:id/weatherApp"
           element={<WeatherApp handleSearchChange={handleSearchChange} currentWeather={currentWeather} forecastWeather={forecastWeather}/>}
@@ -38,10 +36,6 @@ const AppRouter = ({
         <Route
           path="/singleAppPage/:id/singlePriceGridComponentApp"
           element={<AppSinglePriceGridComponent />}
-        />
-        <Route
-          path="/project"
-          element={<SmallScreen />}
         />
       </Routes>
     </div>

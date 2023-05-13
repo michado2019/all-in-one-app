@@ -1,9 +1,9 @@
-.appRouter{
-    width: 70vw;
-    min-height: 100vh;
+.appRouter {
+  width: 70vw;
+  min-height: 100vh;
 }
 @media (max-width: 575px) {
-    .appRouter {
-      width: 90vw;
-    }
-   }
+  .appRouter {
+    width: 90vw;
+  }
+}

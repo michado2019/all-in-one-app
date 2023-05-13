@@ -40,7 +40,7 @@ function App() {
   };
   return (
     <div className="App">
-      <Header />
+      <Header setDisplay={setDisplay} display={display} />
       <div className="appSidebar-router">
         <Sidebar
           display={display}

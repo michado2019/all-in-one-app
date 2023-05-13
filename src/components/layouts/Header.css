@@ -1,53 +1,92 @@
-.headerWrapper{
-    height: 100px;
-    position: sticky;
-    top: 0;
-    left: 0;
+.headerWrapper {
+  height: 100px;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
-.header-contents{
-    display: flex;
-    padding: 10px 300px;
-    background-color: #fff !important;
-    align-items: center;
+.header-contents {
+  display: flex;
+  padding: 10px 300px;
+  background-color: #fff !important;
+  align-items: center;
 }
 .logo {
-    width: 40px;
-    height: 40px;
-    margin-right: auto;
-    border-radius: 5px;
-    margin-left: -120px;
-    border: 1px solid #2c6bbe;
-  }
-  .headerLink-list{
-    list-style: none;
-    margin: 0 20px;
-  }
+  width: 40px;
+  height: 40px;
+  margin-right: auto;
+  border-radius: 5px;
+  margin-left: -120px;
+  border: 1px solid #2c6bbe;
+}
+.headerLink-list {
+  list-style: none;
+  margin: 0 20px;
+}
+.home-icon {
+  width: 40px !important;
+  height: 40px !important;
+  color: #2c6bbe;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+#projectTitle {
+  position: absolute;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 40px 15px;
+  min-width: fit-content;
+  width: 100%;
+  text-align: center;
+  height: 250px;
+  left: -20px;
+  top: 62px;
+}
+.headerCancel {
+  float: right;
+  color: #2c6bbe !important;
+  margin-top: -20px;
+  width: 25px !important;
+  height: 25px !important;
+  cursor: pointer;
+}
+#project {
+  font-size: 20px;
+  margin-top: 100px;
+  margin-left: -10px;
+}
+#projects {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
   .home-icon {
-    width: 40px !important;
-    height: 40px !important;
-    color: #2c6bbe !important;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
+    margin-left: 70px;
   }
-  @media (max-width: 768px) {
-     .home-icon{
-        margin-left: 70px;
-     }
+}
+@media (max-width: 575px) {
+  .logo {
+    margin-left: -240px;
   }
-  @media (max-width: 575px) {
-    .logo{
-       margin-left: -240px;
-    }
- }
- @media (max-width: 480px) {
-    .logo{
-       margin-left: -280px;
-    }
- }
- @media (max-width: 400px) {
-    #project{
-        margin-left: -30px;
-    }
- }
+}
+@media (min-width: 575px) {
+  #projectTitle {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .logo {
+    margin-left: -280px;
+  }
+}
+@media (max-width: 400px) {
+  #project {
+    margin-left: -30px;
+  }
+}
+@media (max-width: 370px) {
+  .logo {
+   margin-right: -40px;
+  }
+}
