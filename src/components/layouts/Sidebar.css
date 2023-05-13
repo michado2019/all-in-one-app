@@ -4,6 +4,7 @@
   height: 100vh;
   position: fixed;
   left: 0;
+  top: 0;
 }
 .sidebarWrapper-contents {
   display: flex;
@@ -18,21 +19,15 @@
   color: #2c6bbe !important;
   font-size: 16px !important;
 }
-.sidebarLogo {
-  width: 50px;
-  height: 50px;
-  box-shadow: 0.5px 1px 1px 1px #2c6bbe;
-}
-.sidebarHome-icon {
-  width: 40px !important;
-  height: 40px !important;
-  color: #2c6bbe !important;
-  cursor: pointer;
-}
 .sidebarWrapper-content-2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 10px auto;
+}
+@media (max-width: 575px) {
+ .sidebarWrapper{
+  display: none;
+ }
 }

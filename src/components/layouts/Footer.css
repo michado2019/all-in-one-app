@@ -15,3 +15,8 @@
   font-size: 18px;
   margin-left: -150px;
 }
+@media (max-width: 768px) {
+  .footerContent h2 {
+    margin-left: 0;
+  }
+}

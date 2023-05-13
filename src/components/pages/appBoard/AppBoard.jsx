@@ -24,7 +24,7 @@ const AppBoard = ({ display, setDisplay, setHomeId, homeId }) => {
                   to={`singleAppPage/${each.id}`}
                   className="appBoard-link"
                   style={{
-                    border: homeId === each.id ? "3px solid #266e2c" : "",
+                    border: homeId === each.id ? "3px solid #2c6bbe" : "",
                     borderRadius: "3px",
                     padding: "4px",
                     transition: "all 0.1s",

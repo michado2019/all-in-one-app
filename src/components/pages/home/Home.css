@@ -124,3 +124,46 @@
   background-color: #f2f2f2;
   border-radius: 5px;
 }
+@media (max-width: 768px) {
+  .homeContent2-1 {
+    width: 50%;
+    align-items: flex-start;
+  }
+  .arrows {
+    margin: 0 10px;
+    width: 20px !important;
+    height: 30px !important;
+  }
+  .homeContent2-2_content {
+    width: 150%;
+  }
+}
+@media (max-width: 575px) {
+  .homeContent2-titles{
+    text-align: center;
+    margin-left: 35px;
+    font-size: 14px;
+    width: 100%;
+  }
+  .homeContent2-1 {
+    display: none;
+  }
+  .homeContent2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .homeContent2-2 {
+    margin: 0;
+    margin-left: -17%;
+  }
+  .homeContent2-2_content_details{
+    position: absolute;
+    width: 65%;
+  }
+}
+@media (min-width: 576px) {
+  .simpleDashboard {
+    display: none;
+  }
+}

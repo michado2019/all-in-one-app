@@ -5,6 +5,7 @@ import AppRouter from "./components/routes";
 import Footer from "./components/layouts/Footer";
 import Rightbar from "./components/layouts/Rightbar";
 import { WEATHER_API_URL, WEATHER_API_KEY } from "./weatherApi/WeatherApi";
+import Header from "./components/layouts/Header";
 function App() {
   //States
   const [display, setDisplay] = useState(false);
@@ -39,7 +40,7 @@ function App() {
   };
   return (
     <div className="App">
-      {/* <Header /> */}
+      <Header />
       <div className="appSidebar-router">
         <Sidebar
           display={display}

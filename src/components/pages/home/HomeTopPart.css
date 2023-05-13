@@ -9,3 +9,18 @@
 @keyframes mymove {
   50% {background-position: 200px 0;}
 }
+@media (max-width: 768px) {
+  .homeTopPart{
+    width: 88.5vw;
+  }
+}
+@media (max-width: 575px) {
+  .homeTopPart{
+    width: 98.5vw;
+  }
+  .homeSearch{
+    margin-left: -20px;
+    width: 300px;
+  }
+}
+

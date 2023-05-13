@@ -1,7 +1,53 @@
 .headerWrapper{
-    background-color: #2c6bbe;
-    height: 75px;
+    background-color: #f2f2f2 !important;
+    height: 100px;
     position: sticky;
     top: 0;
     left: 0;
 }
+.header-contents{
+    display: flex;
+    padding: 10px 300px;
+    align-items: center;
+}
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: auto;
+    border-radius: 5px;
+    margin-left: -120px;
+    border: 1px solid #2c6bbe;
+  }
+  .headerLink-list{
+    list-style: none;
+    margin: 0 20px;
+  }
+  .home-icon {
+    width: 40px !important;
+    height: 40px !important;
+    color: #2c6bbe !important;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  @media (max-width: 768px) {
+     .home-icon{
+        margin-left: 70px;
+     }
+  }
+  @media (max-width: 575px) {
+    .logo{
+       margin-left: -240px;
+    }
+ }
+ @media (max-width: 480px) {
+    .logo{
+       margin-left: -280px;
+    }
+ }
+ @media (max-width: 400px) {
+    #project{
+        margin-left: -30px;
+    }
+ }

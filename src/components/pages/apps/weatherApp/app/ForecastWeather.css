@@ -1,37 +1,55 @@
-.forecastWeather-wrapper{
-    margin-top: 20px;
-    width: 80%;
+.forecastWeather-wrapper {
+  margin-top: 20px;
+  width: 80%;
 }
-.accordionItemButton-div{
-    display: flex;
-    align-items: flex-start;
-    background-color: #f2f2f2;
-    padding: 5px 15px;
-    margin-top: 7px;
-    border-radius: 20px;
-    cursor: pointer;
-    flex: 1 1;
+.accordionItemButton-div {
+  display: flex;
+  align-items: flex-start;
+  background-color: #f2f2f2;
+  padding: 5px 15px;
+  margin-top: 7px;
+  border-radius: 20px;
+  cursor: pointer;
+  flex: 1 1;
 }
-.forecastItem-btn_div{
-    display: flex;
-    align-items: flex-start;
-    margin-right: auto;
-    flex: 1 1;
+.forecastItem-btn_div {
+  display: flex;
+  align-items: flex-start;
+  flex: 1 1;
 }
-.forecastItem-icon{
-    width: 20px !important;
-    height: 20px !important;
-    margin-right: 5px;
+.forecastItem-icon {
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 15px;
 }
-.forecastText{
-    font-size: 16px;
-    color: #222222
+.forecastText {
+  font-size: 16px;
+  color: #222222;
 }
-#forecast-description{
-    width: 150px;
-    margin-right: auto;
+#forecast-description {
+  width: 150px;
+  margin-left: 150px;
 }
-#forecastText{
-    font-size: 16px;
-    color: #707070;
+#forecastText {
+  font-size: 16px;
+  color: #707070;
+}
+.accordionItemPanel-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+}
+.accordionItemPanel-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.accordionItemPanel-item h2 {
+  font-size: 12px;
+  color: #707070;
+}
+.accordionItem-details {
+  margin-right: 200px;
+  color: #707070;
 }

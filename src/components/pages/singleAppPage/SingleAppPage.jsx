@@ -2,7 +2,6 @@ import React from "react";
 import "./SingleAppPage.css";
 import { useParams, Link } from "react-router-dom";
 import { fProjectData } from "../../ProjectData";
-import HomeHeader from "../home/homeHeader/HomeHeader";
 const SingleAppPage = () => {
   //state
   const [display, setDisplay] = React.useState(false);
@@ -16,7 +15,6 @@ const SingleAppPage = () => {
           .map((each) => {
             return (
               <div key={each.id}>
-                <HomeHeader />
                 <div className="singleAppPage-content">
                   <Link
                     to={`/singleAppPage/${each.id}/${each.path}`}

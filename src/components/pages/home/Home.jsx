@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Home.css";
-import HomeHeader from "./homeHeader/HomeHeader";
 import projectsData from "./homeData/HomeData";
 import {
   ArrowBackIosNew,
@@ -10,10 +9,10 @@ import {
 } from "@mui/icons-material";
 import { Link, useSearchParams } from "react-router-dom";
 import HomeTopPart from "./HomeTopPart";
+import SimpleDashboard from "./simpleDashboard/SimpleDashboard";
 const Home = ({ setDisplay, setHomeId }) => {
   // States
   const [search, setSearch] = useSearchParams();
-
   const [projectDisplay, setProjectDisplay] = useState(false);
   const [id, setId] = useState("");
   const [page, setPage] = useState(1);
@@ -42,15 +41,14 @@ const Home = ({ setDisplay, setHomeId }) => {
       setSearch({});
     }
   };
- 
+
   return (
     <div className="homeWrapper">
       <div className="homeContents">
         <div className="homeContent1">
-          <HomeHeader />
         </div>
         <div className="homeContent">
-          <HomeTopPart handleNameSearch={handleNameSearch}/>
+          <HomeTopPart handleNameSearch={handleNameSearch} />
           <div className="homeContent2">
             <div className="homeContent2-1">
               <h2 className="homeContent2-titles">Internal projects</h2>
@@ -81,6 +79,9 @@ const Home = ({ setDisplay, setHomeId }) => {
                   onClick={() => setPage((prev) => prev + 1)}
                 />
               </div>
+            </div>
+            <div className="simpleDashboard">
+              <SimpleDashboard setPage={setPage} page={page} pages={pages} />
             </div>
             <div className="homeContent2-2">
               <h2 className="homeContent2-titles">External projects</h2>
