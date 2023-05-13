@@ -5,6 +5,7 @@ const Sidebar = ({display, setDisplay, setHomeId, homeId}) => {
   return (
     <div className="sidebarWrapper">
       <div className="sidebarWrapper-contents">
+        <h2>Apps</h2>
       </div>
       <div className="sidebarWrapper-content-2">
         <AppBoard display={display} setDisplay={setDisplay} setHomeId={setHomeId} homeId={homeId}/>
