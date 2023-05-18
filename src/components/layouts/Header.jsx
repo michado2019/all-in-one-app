@@ -56,7 +56,7 @@ const Header = ({ setDisplay, display }) => {
           />
           {fProjectData.map((each) => {
             return (
-              <div>
+              <div key={each.id}>
                 <CustomNavbarLink
                   to={`/singleAppPage/${each.id}`}
                   className="home-icon"

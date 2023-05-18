@@ -18,7 +18,7 @@
   min-height: fit-content;
 }
 .singleAppPage-content_link:hover {
-  border-bottom: 5px solid #2c6bbe;
+  border-bottom: 50px solid #2c6bbe;
   transition: all 0.3s;
 }
 .singleAppPage-skill_display {
